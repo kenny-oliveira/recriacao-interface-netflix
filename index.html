@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--main css style-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--jquery & owl javascripts-->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/owl.carousel.min.js"></script>
+    <!--owl css-->
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+    <!--fontawesome javascript-->
+    <script src="https://kit.fontawesome.com/c867b53960.js" crossorigin="anonymous"></script>
+    <!--Responsive css-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Clone Netflix</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+          <nav class="nav">
+            <div id="headerbar">
+            <ul>
+                <li><button onclick="Togglevoltar()" id="voltar"><img width="40" src="/img/voltar.png"></button></li>
+                <li id= "linav"><button onclick="Togglenavbar()"><img width="40" src="img/navbutton.png"></button></li>
+                <li id= "linet"><h3>Netflix</h3></li>
+                <li><button onclick="Togglesearch(this)" id="search"><img width="40" src="img/search.png"><input placeholder="Buscar" id="searchtext" type="text"></button></li>
+            </ul>
+            </div>
+            <div id="navbar" style="opacity: 0;">
+             <ul>
+              <li class="disp"><img id="profile" width="50" height="50" src="img/profile.jpg"><p>Para ver juntos</p><button id="swap"><img width="20" height="20" src="img/swap.png"></button></li>
+              <hr>
+              <a href="#"><li><p class="notification" href="#"><i class="fas fa-bell-slash"></i> Notificações</p></li></a>
+              <hr>
+              <a href="#"><li id="download"><p><i class="fas fa-download"></i> Meus downloads</p></li></a>
+              <hr>
+              <a href="#"><li><p class="navactive" href="#"><i class="fas fa-home"></i> Inicio</p></li></a>
+              <a href="#"><li><p><i class="fas fa-tv"></i> Séries</p></li></a>
+              <a href="#"><li><p><i class="fas fa-video"></i> Filmes</p></li></a>
+              <a href="#"><li><p><i class="fas fa-book"></i> Documentários</p></li></a>
+              </ul>
+            </div>
+          </nav>
+        </div>
+    </header>
+<main>
+<div class="filme-principal">
+    <div class="container">
+       <h3 class="titulo">HOUSE OF CARDS</h3>
+       <p class="descricao">O congressista Francis Underwood e sua mulher, Claire, fazem de tudo para conquistar seus objetivos, não importa o que aconteça. Um mundo político recheado de ganância, corrupção e luxúria na capital Washington.</p>
+       <div class="botoes">
+       <button role="botao" class="botao"><i class="fas fa-play"></i> Assistir</button>
+       <button role="botao" class="botao"><i class="fas fa-plus"></i> Minha Lista</button>
+       <button role="botao" class="botao"><i class="fas fa-info"></i> Mais informações</button>
+       </div>
+    </div>
+</div>
+</main>
+<div class="carrousel-filmes">
+    <div class="owl-carousel ">
+        <div class="item"><img class="box-filme" src="img/mini1.jpg"></div>
+        <div class="item"><img class="box-filme" src="img/mini2.jpg"></div>
+        <div class="item"><img class="box-filme" src="img/mini3.jpg"></div>
+        <div class="item"><img class="box-filme" src="img/mini4.jpg"></div>
+        <div class="item"><img class="box-filme" src="img/mini5.jpg"></div>
+        <div class="item"><img class="box-filme" src="img/mini6.jpg"></div>
+        <div class="item"><img class="box-filme" src="img/mini7.jpg"></div>
+        <div class="item"><img class="box-filme" src="img/mini8.jpg"></div>
+        <div class="item"><img class="box-filme" src="img/mini9.jpg"></div>
+        <div class="item"><img class="box-filme" src="img/mini10.jpg"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+</body>
+</html>

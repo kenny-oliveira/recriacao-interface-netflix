@@ -1,0 +1,240 @@
+:root{
+    --preta: #141414;
+    --vermeho: #E50914;
+    --cinzaescuro: #cacaca;
+    --branco: white;
+    --cinzamaisescuro: rgb(39, 39, 39);
+}
+
+body{
+    background-color: var(--preta);
+}
+
+body,ul{
+    color: var(--cinzaescuro);
+    font-family: 'Arial', Times, serif;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr{
+    background-color: var(--preta);
+    color: var(--preta);
+    border: black solid 1px;
+}
+
+.nav button{
+    background-color: var(--preta);
+    border:none;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    justify-content: left;
+    position: relative;
+    background-color: var(--preta);
+    width: 100%;
+    height: 100%;
+}
+
+#navbar{
+    position: absolute;
+    z-index: 1;
+    background-color: var(--cinzamaisescuro);
+    width: 150%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: opacity 1s ease-out;
+}
+
+.disp{
+    display: flex;
+    justify-content: left;
+    padding-bottom: 10px;
+}
+
+.disp p{
+    position: relative;
+    padding-top: 20px;
+    left: 20px;
+}
+
+#swap{
+    background-color: var(--cinzamaisescuro);
+    cursor: pointer;
+}
+
+#side{
+    position: relative;
+    font-size: large;
+    font-weight: bold;
+    left: 70px;
+}
+
+.notification{
+    color: var(--cinzaescuro);
+}
+
+.notification p{
+    background-color: var(--cinzamaisescuro);
+}
+
+#swap img{
+   position: relative;
+   left: 60px;
+   top: 15px;
+}
+
+#profile{
+    border-radius: 50px;
+}
+
+.navactive{
+    color: var(--branco);
+    font-weight: bold;
+}
+
+.nav a{
+    color: var(--cinzaescuro);
+    text-decoration: none;
+}
+
+#download{
+    display: flex;
+}
+
+#navbar ul li:hover:not(.disp){
+    background-color: rgb(82, 82, 82);
+}
+
+.nav{
+    width: 100%;  
+}
+
+#navbar{
+    width: 250px;
+}
+
+#headerbar li img{
+    float: left;
+}
+
+#headerbar {
+    width: 100%;
+}
+
+#headerbar li{
+  display: inline-block;
+}
+
+#search{
+   position: absolute;
+   bottom: 0;
+   top:10%;
+   right: 0%;
+   cursor: pointer;
+}
+
+#searchtext:focus{
+    outline: none;
+    border:1px solid skyblue;
+}
+
+#searchtext{
+    position: relative;
+    top: 25%;
+    margin-right: 10px;
+    margin-left: 5px;
+    border: grey 1px solid;
+    width: 100%;
+    background-color: var(--preta);
+    color: white;
+    font-weight: bold;
+    display: none;
+}
+
+#voltar{
+    display: none;
+    cursor: pointer;
+}
+
+#headerbar button{
+    color: var(--cinzaescuro);
+}
+
+#headerbar h3{
+    position: relative;
+    color: var(--vermeho);
+    bottom:5px;
+    font-family: "Arial Black",Times;
+    font-size: 40px;
+}
+
+.filme-principal{
+    color: var(--branco);
+    font-size: 16px;
+}
+
+.filme-principal .container {
+    display: inline-block;
+    background: url(../img/capa-house.jpg) no-repeat;
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    color: var(--branco);
+    border:none;
+    padding: 15px 30px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: var(--branco);
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+#linav button{
+    cursor: pointer;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrousel-filmes{
+    margin-top: 5px;
+}
